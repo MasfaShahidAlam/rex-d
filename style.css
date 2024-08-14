@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+nav{
+  height: 80px;
+}
+
+label.logo {
+ padding:0 90px;
+ line-height: 5;
+  
+}
+
+nav ul {
+ display: inline;
+ justify-content: space-between;
+  
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: rgb(139, 131, 131);
+  
+
+
+}
+
+
+
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.button{
+  background-color: rgb(245, 89, 81);
+  color: rgb(240, 240, 230);
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+}
+.appright-nav{
+  height: 16px;
+  width: 40px;
+  border-left:1px solid #afa5a5;
+  display: inline;
+  margin: 20px;
+
+
+  
+}
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static-txt{
+margin-left: 106px;
+margin-top: 50px;
+  font-size:40px ;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+
+
+.motion{
+  display: flex;
+  font-size: 40px;
+  font-weight: 300;
+  margin-left: 50px;
+}
+
+.motion span {
+  word-break: break-all;
+  height: 1.2em;
+  width:0%;
+  overflow: hidden;
+  animation:t 4.5s infinite ;
+}
+.motion span:before {
+  content:" ";
+ 
+}
+@keyframes t{
+  90%,100% {width:40%}
+}
+
+.paragraph{
+  font-size: 20px;
+  font-weight: 200;
+  color: #afa5a5;
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.para-img{
+  display: flex;
+
+}
+
+.heading{
+  font-size: 50px;
+  margin-top: 10rem;
+}
+
+/* Contact Form */
+#contact {
+  background-color: rgb(219, 213, 213);
+}
+
+.form-btn {
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 20px;
+  margin-top: 20px;
+  background: linear-gradient(to right, red, black);
+  color: white;
+}
+
+form input,
+textarea {
+  background-color: rgb(214, 197, 197);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.8rem;
+  width: 100%;
+  margin-bottom: 3.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.get-btn{
+margin:10px 10px 10px 90px;
+border-radius: 5px;
+border: 1px solid rgb(184, 177, 177);
+padding: 18px;
+
+justify-content: space-between;
+font-size: large;
+font-weight: 600;
+}
+
+.comp-img{
+  margin-left: 90px;
+}
+.btn-img{
+  margin-top: -250px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 952px) {
+  label.logo {
+   
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  .button{
+    display: none;
+  }
+  .appright-nav{
+    display: none;
+  }
+
+  .wrapper .static-txt{
+    margin-left: 10px;
+margin-top: 50px;
+  font-size:25px ;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  }
+  .motion{
+  display: flex;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 10px;
+  }
+  .btn-img{
+display: inline;
+justify-content: space-between;
+  }
+  .get-btn{
+border-radius: 5px;
+border: 1px solid rgb(58, 55, 55);
+
+
+}
+
+.comp-img{
+  width: 20;
+  margin-left: 10px
+}
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+  .button{
+    display: none;
+  }
+  .appright-nav{
+    display: none;
+  }
+}
+
+
